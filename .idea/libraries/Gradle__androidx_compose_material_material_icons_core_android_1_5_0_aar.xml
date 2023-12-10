@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.compose.material:material-icons-core-android:1.5.0@aar" external-system-id="GRADLE">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../../Downloads2/gradle-7.3.2/caches/transforms-3/832e6627f9b4c636f15804c0bfc4792b/transformed/material-icons-core-release/res" />
+      <root url="jar://$PROJECT_DIR$/../../Downloads2/gradle-7.3.2/caches/transforms-3/832e6627f9b4c636f15804c0bfc4792b/transformed/material-icons-core-release/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../Downloads2/gradle-7.3.2/caches/transforms-3/832e6627f9b4c636f15804c0bfc4792b/transformed/material-icons-core-release/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../Downloads2/gradle-7.3.2/caches/modules-2/files-2.1/androidx.compose.material/material-icons-core-android/1.5.0/e8bea2a68a490251b0c0c672cbf16bbcac861dc/material-icons-core-android-1.5.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
