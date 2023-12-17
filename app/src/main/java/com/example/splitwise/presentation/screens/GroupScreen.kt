@@ -1,6 +1,5 @@
 package com.example.splitwise.presentation.screens
 
-import android.media.Image
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -21,7 +20,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
-import androidx.compose.ui.semantics.Role.Companion.Image
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -94,7 +92,7 @@ fun formatAmount(amount: Double): String = String.format("%.2f", amount)
 
 data class Group(
     val name: String,
-    val image: Image, // Replace with your image source
+    val image: Unit, // Replace with your image source
     val members: List<Member>,
     val totalAmount: Double,
 )
@@ -110,17 +108,20 @@ data class Member(
 fun GroupListPreview() {
     GroupListScreen(groups = listOf(
         Group(
-            name = "Weekend Trip",
-            //image = Image,
+            "Weekend Trip",
+            Image(modifier =Modifier.size(56.dp),
+                painter = painterResource(id =  com.example.splitwise.R.drawable.g1), contentDescription = "Weekend Trip"),
 
-            members = listOf(Member(name = "John", amount = 20.00), Member(name = "Jane", amount = -30.00)),
-            totalAmount = -10.00,
-        ),
-        Group(
-            name = "Coffee Club",
-            //image = ImageAsset("coffee_image.png"),
-            members = listOf(Member(name = "Emma", amount = 5.00), Member(name = "David", amount = 2.50)),
-            totalAmount = 7.50,
-        ),
+                members = listOf(Member(name = "John", amount = 20.00), Member(name = "Jane", amount = -30.00)),
+                totalAmount = -10.00)
+            ,
+            Group(name = "Coffee Club", image = Image(
+                    modifier = Modifier.size(56.dp),
+                    painter = painterResource(id = com.example.splitwise.R.drawable.g2),
+                    contentDescription = "Coffee Club"
+                ), members = listOf(
+                    Member(name = "Emma", amount = 5.00),
+                    Member(name = "David", amount = 2.50)
+                ), totalAmount = 7.50,)
     ))
 }
