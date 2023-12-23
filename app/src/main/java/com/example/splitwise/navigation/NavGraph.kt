@@ -1,17 +1,14 @@
 package com.example.splitwise.navigation
 
-import android.window.SplashScreen
 import androidx.compose.animation.ExperimentalAnimationApi
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
-import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
-import androidx.navigation.navArgument
 import coil.annotation.ExperimentalCoilApi
-import com.example.splitwise.presentation.screens.HomeScreen
-import com.example.splitwise.presentation.screens.SearchScreen
-import com.example.splitwise.presentation.screens.SplashScreen
+import com.example.splitwise.presentation.screens.home.HomeScreen
+import com.example.splitwise.presentation.screens.search.SearchScreen
+import com.example.splitwise.presentation.screens.splash.SplashScreen
 
 @ExperimentalCoilApi
 @ExperimentalAnimationApi

@@ -1,4 +1,4 @@
-package com.example.splitwise.presentation.screens
+package com.example.splitwise.presentation.screens.home
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
@@ -15,9 +15,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 import java.text.DateFormat
-import java.text.SimpleDateFormat
 import java.util.Date
-import java.util.Locale
 
 
 @Composable
@@ -26,52 +24,6 @@ fun HomeScreen(navController: NavHostController){
 
 }
 
-/*
-data class Payment(
-    val sender: String,
-    val receiver: String,
-    val amount: Double,
-    val date: String  ,
-    val description: String
-)
-
-val payments = listOf(
-    Payment("John", "Alice", 50.0, "25th October", "Dinner"),
-    Payment("Alice", "Bob", 30.0, "20th Oct", "Movie"),
-    // Add more payments here
-)
-
-@Composable
-fun PaymentList(payments: List<Payment>) {
-    LazyColumn {
-        items(payments) { payment ->
-            PaymentItem(payment)
-        }
-    }
-}
-
-@Composable
-fun PaymentItem(payment: Payment) {
-    val dateFormat = SimpleDateFormat("dd/MM/yyyy", Locale.getDefault())
-    val formattedDate = dateFormat.format(payment.date)
-
-    Column(modifier = Modifier.padding(16.dp)) {
-        Text(text = "Sender: ${payment.sender}")
-        Text(text = "Receiver: ${payment.receiver}")
-        Text(text = "Amount: ${payment.amount}")
-        Text(text = "Date: $formattedDate")
-        Text(text = "Description: ${payment.description}")
-    }
-}
-
-@Preview
-@Composable
-fun PreviewPaymentList() {
-    PaymentList(payments = payments)
-}
-
-
-*/
 
 @Composable
 fun PaymentList(payments: List<Payment>) {
@@ -156,5 +108,6 @@ fun PaymentItemPreview() {
         amount = 100.00,
         date = Date(2023, 12, 16),
         description = "Payment for groceries",
-    ))
+    )
+    )
 }

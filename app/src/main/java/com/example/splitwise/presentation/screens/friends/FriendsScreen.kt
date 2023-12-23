@@ -1,4 +1,4 @@
-package com.example.splitwise.presentation.screens
+package com.example.splitwise.presentation.screens.friends
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column

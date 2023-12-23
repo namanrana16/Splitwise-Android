@@ -1,4 +1,4 @@
-package com.example.splitwise.presentation.screens
+package com.example.splitwise.presentation.screens.group
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
@@ -23,6 +23,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.example.splitwise.R
 
 @Composable
 fun GroupListScreen(groups: List<Group>) {
@@ -110,14 +111,14 @@ fun GroupListPreview() {
         Group(
             "Weekend Trip",
             Image(modifier =Modifier.size(56.dp),
-                painter = painterResource(id =  com.example.splitwise.R.drawable.g1), contentDescription = "Weekend Trip"),
+                painter = painterResource(id =  R.drawable.g1), contentDescription = "Weekend Trip"),
 
                 members = listOf(Member(name = "John", amount = 20.00), Member(name = "Jane", amount = -30.00)),
                 totalAmount = -10.00)
             ,
             Group(name = "Coffee Club", image = Image(
                     modifier = Modifier.size(56.dp),
-                    painter = painterResource(id = com.example.splitwise.R.drawable.g2),
+                    painter = painterResource(id = R.drawable.g2),
                     contentDescription = "Coffee Club"
                 ), members = listOf(
                     Member(name = "Emma", amount = 5.00),
