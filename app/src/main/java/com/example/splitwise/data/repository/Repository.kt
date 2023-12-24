@@ -36,4 +36,9 @@ return local.getHomeDetails()
         return dataStore.readOnBoardingState()
     }
 
+
+    suspend fun getTransaction(transactionId:Int):Transaction
+    {
+        return local.getTransaction(transactionId = transactionId)
+    }
 }
